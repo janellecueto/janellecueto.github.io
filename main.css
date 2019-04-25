@@ -29,4 +29,12 @@
     height: 40vh;
 }
 /* #projects-inner > .row > .col{height: 100%;} */
+#resume-inner{display: block; height: 100%;}
+#scrolling{display: block; height: 80%; }
 
+.res-tab{
+    display: block; padding-left: 20px;
+}
+.res-sec{
+    display: block; margin-bottom: 20px;
+}
