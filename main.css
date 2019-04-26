@@ -30,7 +30,7 @@
 }
 /* #projects-inner > .row > .col{height: 100%;} */
 #resume-inner{display: block; height: 100%;}
-#scrolling{display: block; height: 80%; }
+#scrolling{display: block; max-height: 80%; background: #eee; overflow-x: auto;}
 
 .res-tab{
     display: block; padding-left: 20px;
