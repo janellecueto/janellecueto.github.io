@@ -33,8 +33,10 @@
 #scrolling{display: block; max-height: 80%; background: #eee; overflow-x: auto;}
 
 .res-tab{
-    display: block; padding-left: 20px;
+    display: block; padding-left: 30px;
 }
 .res-sec{
     display: block; margin-bottom: 20px;
 }
+.res-link{text-decoration: none; color: black; transition: all 0.3s ease-in-out;}
+.res-link:hover{color: pink; text-decoration: none;}
