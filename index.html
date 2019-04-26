@@ -12,31 +12,36 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light scrolling-navbar">
-        <a class="navbar-brand" href="#">
-            <span>JANELLE CUETO</span>
-        </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="collapsibleNav"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse flex-grow-1" id="myNavbar">
-            <ul class="navbar-nav ml-auto flex-nowrap">
-                <li class="nav-item">
-                    <a href="#" class="nav-link m-2 menu-item nav-active">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link m-2 menu-item">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link m-2 menu-item">Resume</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <div id="tester">
+        <span id="scrollDelta"></span>
+    </div>
 
-    <div class="container-fluid" style="position: relative; top: 56px;">
+    <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-light scrolling-navbar">
+                    <a class="navbar-brand" href="#">
+                        <span>JANELLE CUETO</span>
+                    </a>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="collapsibleNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse flex-grow-1" id="myNavbar">
+                        <ul class="navbar-nav ml-auto flex-nowrap">
+                            <li class="nav-item">
+                                <a href="#1" class="nav-link m-2 menu-item nav-active">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#2" class="nav-link m-2 menu-item">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#3" class="nav-link m-2 menu-item">Resume</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
         <div id="welcome" class="page-block">
+            <a name="1" class="snap-link"></a>
             <section id="welcome-inner" class="inner-vcenter">
                 <h1>Hello!</h1>
                 <p>My name is Janelle Cueto. I am a
@@ -50,6 +55,7 @@
             </section>
         </div>
         <div id="projects" class="page-block">
+            <a name="2" class="snap-link"></a>
             <section id="projects-inner" class="inner-vcenter">
                 <div class="subject-header">
                     <h1>Here are a few of the projects I've worked on:</h1>
@@ -82,7 +88,9 @@
                 </div>
             </section>
         </div>
+        
         <div id="resume" class="page-block">
+            <a name="3" class="snap-link"></a>
             <section id="resume-inner" class="inner-vcenter">
                 <div class="subject-header">
                     <h1>Info & Resume</h1>
@@ -231,11 +239,13 @@
             </section>
         </div>
     </div>
-</body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+
 </html>

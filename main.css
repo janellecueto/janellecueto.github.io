@@ -1,7 +1,7 @@
 *{box-sizing: border-box;}
 .inner-vcenter{
-    width: 80%; 
-    position: relative; top: 40%; left: 50%;
+    width: 80%; max-height: 100%;
+    position: relative; top: 50%; left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
 .front-vcenter{
@@ -10,7 +10,7 @@
     text-align: center;
 }
 .page-block{
-    display: block; height: calc(100vh - 56px);
+    display: block; height: 100vh;
 }
 .subject-header{
     margin-bottom: 40px;
@@ -30,7 +30,7 @@
 }
 /* #projects-inner > .row > .col{height: 100%;} */
 #resume-inner{display: block; height: 100%;}
-#scrolling{display: block; max-height: 80%; background: #eee; overflow-x: auto;}
+#scrolling{display: block; max-height: 75%; background: #eee; overflow-x: auto;}
 
 .res-tab{
     display: block; padding-left: 30px;
@@ -40,3 +40,17 @@
 }
 .res-link{text-decoration: none; color: black; transition: all 0.3s ease-in-out;}
 .res-link:hover{color: pink; text-decoration: none;}
+
+.snap-link{
+    position: relative;
+    top: -20px;
+}
+
+#tester{
+    display: block; 
+    position: fixed;
+    top: 80px; left: 5px;
+    width: 200px; height: 100px;
+    background: blue;
+    color: white
+}
