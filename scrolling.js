@@ -18,3 +18,10 @@ $(document).on('click', 'a[href^="#"]', function(e) {
     $id[0].scrollIntoView({behavior: "smooth"});
 });
 
+$('#projects-row .col-md').hover(function(){
+    $(this).find('.bg-pic').css("filter", "brightness(90%)");
+    $(this).find('a').show();
+}, function(){
+    $(this).find(".bg-pic").css("filter", "brightness(40%)");
+    $(this).find('a').hide();
+});

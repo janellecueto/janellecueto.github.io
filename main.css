@@ -1,9 +1,18 @@
 *{box-sizing: border-box;}
 /* for snap scrolling behavior */
+
+/**
+ *  #4a4e69 (~navy)
+ *  #d81e5b (~hot pink)
+ *  #ffffff
+ *  #fab3a9 (~peach)
+ *  #222222
+ */
 body{
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory;
+    color: #222;
 }
 .inner-vcenter{
     width: 80%; max-height: 100%;
@@ -19,17 +28,27 @@ body{
     display: block; height: 100vh;
 }
 .subject-header{
-    margin-bottom: 40px;
+    margin: 40px 0;
 }
 .subject-footer{
     padding-top: 40px;
     text-align: center;
 }
-/* .page-block-inner{height: 100%;} */
+a{color: #fab3a9; transition: all 0.3s ease-in-out;}
+a:hover{color: #d81e5b; text-decoration: none;}
+
+.btn-outline-pink{
+    color: #fab3a9;
+    border-color: #fab3a9;
+}
+.btn-outline-pink:hover{
+    color: white; background-color: #d81e5b; border: 1px solid transparent;
+}
 
 #welcome-inner h1{
-    font-size: 96px;
+    font-size: 112px;
     font-weight: bold;
+    color: #4a4e69;
 }
 
 #projects-row{
@@ -37,7 +56,14 @@ body{
 }
 /* #projects-inner > .row > .col{height: 100%;} */
 #resume-inner{display: block; height: 100%;}
-#scrolling{display: block; max-height: 75%; background: #eee; overflow-x: auto;}
+#scrolling{
+    display: block; 
+    padding: 10px;
+    max-height: 70%; 
+    color:  #4a4e69;
+    /* color: white; */
+    overflow-x: auto;
+}
 
 .res-tab{
     display: block; padding-left: 30px;
@@ -45,13 +71,23 @@ body{
 .res-sec{
     display: block; margin-bottom: 20px;
 }
-.res-link{text-decoration: none; color: black; transition: all 0.3s ease-in-out;}
-.res-link:hover{color: pink; text-decoration: none;}
+.res-link{text-decoration: none; color: #4a4e69; transition: all 0.3s ease-in-out;}
+.res-link:hover{color: #fab3a9; text-decoration: none;}
 
-.snap-link{
-    position: relative;
-    top: -20px;
+.bg-pic{
+    width: 100%; height: 100%;
+    position: relative; top:0; right: 0;
+    background-position: center; 
+    transition: all 0.5s ease-in-out;
+    filter: brightness(40%);
 }
+
+#pr1{background: url("photos/demo\(3\).JPG");}
+#pr2{background: url("photos/cs418_1\(1\).JPG");}
+#pr3{background: url("photos/revit\(2\).JPG");}
+
+#projects-row h3{color: white;}
+#projects-row a{display: none;}
 
 #tester{
     display: block; 
