@@ -1,4 +1,8 @@
 *{box-sizing: border-box;}
+body{scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
 .inner-vcenter{
     width: 80%; max-height: 100%;
     position: relative; top: 50%; left: 50%;
@@ -23,6 +27,7 @@
 
 #welcome-inner h1{
     font-size: 96px;
+    font-weight: bold;
 }
 
 #projects-row{

@@ -6,6 +6,11 @@ $('.nav-link').click(function(e){
     let target = $('a[name='+clickRef+']');
 
 });
+
+function mouseIsOver(box){
+    let temp = $(box).parent().find(":hover");
+    return temp.length == 1;
+}
 // $(window).on('wheel', function(e){
 //     alert('scroll detected! delta = '+e.originalEvent.deltaY);
 // })
@@ -18,9 +23,10 @@ $(window).on('wheel', function(e){
     let lastScrollTop = $(this).scrollTop();
     var scrollDirection, targetUp, targetDown, targetEle;
 
-    $('#scrollDelta').text('ScrollTop: '+lastScrollTop+"delta: "
-    +e.originalEvent.deltaY+
-    'welcom: '+welcome+'projects: '+projects+'resume:'+resume+'contact'+contact);
+    // $('#scrollDelta').text('ScrollTop: '+lastScrollTop+"delta: "
+    // +e.originalEvent.deltaY+
+    // 'welcom: '+welcome+'projects: '+projects+'resume:'+resume+'contact'+contact);
+    
     if(e.originalEvent.deltaY > 0){
         scrollDirection = 'up';
     }
@@ -30,21 +36,33 @@ $(window).on('wheel', function(e){
 
     e.preventDefault();
 
-    if(lastScrollTop === welcome || lastScrollTop < projects){
+    if(lastScrollTop === welcome){
         targetUp = $('#welcome');
         targetDown = $('#projects');
     } else if(lastScrollTop === projects){
         targetUp = $('#welcome');
         targetDown = $('#resume');
     } else if(lastScrollTop === resume){
-        targetUp = $('#projects');
-        targetDown = $('#contact');
-    } else if(lastScrollTop === contact || lastScrollTop < contact){
+        //NOTE: there is a scrolling div inside the resume tab :o
+        if($('#scrolling:hover')){
+            targetUp = null;
+            targetDown = null;
+        } else{
+            targetUp = $('#projects');
+            targetDown = $('#contact');
+        }
+    } else if(lastScrollTop === contact){
         targetUp = $('#resume');
         targetDown = $('#contact');
-    } else if(lastScrollTop > resume){
+    } else if (lastScrollTop < projects && lastScrollTop > welcome){
+        targetUp = $('#welcome');
+        targetDown = $("#projects");
+    } else if(lastScrollTop < resume && lastScrollTop > projects){
         targetUp = $('#projects');
         targetDown = $('#resume');
+    } else if(lastScrollTop < contact && lastScrollTop > resume){
+        targetUp = $('#resume');
+        targetDown = $('#contact');
     } else if(lastScrollTop > contact){
         targetUp = $('#resume');
         targetDown = $('#contact');
