@@ -64,6 +64,7 @@ a:hover{color: #d81e5b; text-decoration: none;}
     color:  #4a4e69;
     /* color: white; */
     overflow-x: auto;
+    background-color: #eee;
 }
 
 .res-tab{
