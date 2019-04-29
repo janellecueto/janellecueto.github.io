@@ -26,6 +26,7 @@ body{
 }
 .page-block{
     display: block; height: 100vh;
+    scroll-snap-align: center;
 }
 .subject-header{
     margin: 40px 0;
