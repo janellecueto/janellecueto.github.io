@@ -25,3 +25,9 @@ $('#projects-row .col-md').hover(function(){
     $(this).find(".bg-pic").css("filter", "brightness(40%)");
     $(this).find('a').hide();
 });
+
+$('#backButton i').hover(function(){
+    $('.hidden-left').css("color", "#fab3a9");
+}, function(){
+    $('.hidden-left').css("color", "white");
+});

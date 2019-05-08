@@ -99,3 +99,21 @@ a:hover{color: #d81e5b; text-decoration: none;}
     background: blue;
     color: white
 }
+
+#backButton i{
+    font-size: 24px;
+    padding: 0px 10px;
+    transition: all 0.3s ease-in-out;
+}
+#backButton i:hover{
+    color: #fab3a9;
+}
+.hidden-left{
+    /* display: none; */
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+#gitIcon{
+    color: #4a4e69;
+}
