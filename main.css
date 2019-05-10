@@ -110,10 +110,11 @@ a:hover{color: #d81e5b; text-decoration: none;}
 }
 .hidden-left{
     /* display: none; */
-    color: white;
+    color: transparent;
     transition: all 0.3s ease-in-out;
 }
 
 #gitIcon{
     color: #4a4e69;
 }
+

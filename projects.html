@@ -14,6 +14,33 @@
     body{
         scroll-snap-type: none;
     }
+    .big-4{
+        height: 95%;
+    }
+    .big-4 .row{
+        height: 50%;
+    }
+    .big-card{
+        width: 100%;
+        height: 100%;
+        background-color: #fab3a9;
+    }
+    .big-desc{
+        width: 100%;
+        height: 100%;
+        background-color: #d81e5b;
+    }
+    .desc{
+        color: white;
+        padding: 15px;
+    }
+    a.desc-header{
+        font-size: 24px;
+        color: white;
+    }
+    a.desc-header:hover{
+        color:#fab3a9;
+    }
     </style>
 </head>
 <body>
@@ -37,11 +64,65 @@
             </p>
         </section>
     </div>
-    <div class="page-block">
-        <section class="inner-vcenter">
-            
+    <div class="page-block" id="project-portal">
+        <section class="inner-vcenter big-4">
+            <div class="row">
+                <div class="col-md-6 big-card">
+                    <span>card1</span>
+                </div>
+                <div class="col-md-6 big-card">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 big-card">
+                    <span>card2</span>
+                </div>
+                <div class="col-md-6 big-desc">
+                    <div class="desc">
+                        <a class="desc-header" href="https://portal.dei-pe.com/hospital/demo/">DEI Electrical Infrastructure Portal</a>
+                        <hr>
+                        <p>
+                            A nifty live data portal for the electrical equipment of hospital groups complete with photo galleries
+                            , printouts, downloadable drawings, and tables galore. DEI engineers enter data after building surveys
+                             using an in-house editor. 
+                        </p>
+                        <p>
+                            Front-end | vanilla JS and jQuery, styled by hand
+                        </p>
+                        <p>
+                            Back-end | PHP (Apache Server) and MariaDB (MySQL)
+                        </p>
+                    </div>
+
+                </div>
+            </div>
         </section>
     </div>
+    <div class="page-block" id="project-escaperoom">
+            <section class="inner-vcenter big-4">
+                <div class="row">
+                    <div class="col-md-6 big-desc">
+                        <div class="desc">
+                            <a class="desc-header" href="https://janellecueto.wixsite.com/class/vr-project-3-escape-room">VR Escape Room</a>
+                            <hr>
+                            <p>
+                                Virtual Reality Escape Room and Archery game bundle for HTC Vive. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 big-card">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 big-card">
+                    </div>
+                    <div class="col-md-6 big-card">
+    
+                    </div>
+                </div>
+            </section>
+        </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
