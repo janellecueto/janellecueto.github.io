@@ -51,6 +51,11 @@ a:hover{color: #d81e5b; text-decoration: none;}
     font-weight: bold;
     color: #4a4e69;
 }
+h1.big-blue{
+    font-size: 112px;
+    font-weight: bold;
+    color: #4a4e69;
+}
 
 #projects-row{
     height: 40vh;
