@@ -29,5 +29,5 @@ $('#projects-row .col-md').hover(function(){
 $('#backButton i').hover(function(){
     $('.hidden-left').css("color", "#fab3a9");
 }, function(){
-    $('.hidden-left').css("color", "white");
+    $('.hidden-left').css("color", "transparent");
 });
