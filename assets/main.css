@@ -123,3 +123,12 @@ h1.big-blue{
     color: #4a4e69;
 }
 
+
+@media screen and (max-width: 768px){
+    body{scroll-snap-type: none;}
+    .page-block{height: auto; padding-bottom: 20px;}
+    .inner-vcenter{width: 90%; position: static; transform: none; display: block; margin: auto;}
+    #welcome{margin-top: 45px;}
+    .big-card{padding: 0;}
+    #welcome-inner h1{font-size: 4em;}
+}
