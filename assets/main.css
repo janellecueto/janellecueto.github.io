@@ -61,11 +61,13 @@ h1.big-blue{
     height: 40vh;
 }
 /* #projects-inner > .row > .col{height: 100%;} */
-#resume-inner{display: block; height: 100%;}
+#resume-inner{display: block; height: 88%;}
+#resume-inner .subject-header{margin: 0;}
+#resume-inner .subject-footer{padding-top: 1rem;}
 #scrolling{
     display: block; 
     padding: 10px;
-    max-height: 70%; 
+    max-height: calc(100% - 106px); 
     color:  #4a4e69;
     /* color: white; */
     overflow-x: auto;
